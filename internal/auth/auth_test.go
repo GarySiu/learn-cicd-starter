@@ -17,7 +17,7 @@ func TestGetAPIKey(t *testing.T) {
 	h := http.Header{}
 	h.Set("Authorization", "ApiKey abc123")
 	got, _ := GetAPIKey(h)
-	if got != "abc1234" {
+	if got != "abc123" {
 		t.Errorf("unexpected api value: %v", got)
 	}
 }
